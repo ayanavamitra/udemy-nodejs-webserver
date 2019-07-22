@@ -9,6 +9,9 @@ const geoForecast = require('./utils/forecast.js')
 
 const app = express()
 
+//For heroku this below line will be used
+const port = process.env.PORT || 3000 //ENV is an obj where we can access env variables and this is set by HEROKU
+
 const pathPublicDirectory = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')

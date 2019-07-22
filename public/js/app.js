@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => { //Here the callback function cal
     feelslike.textContent = ''
     lowest.textContent = ''
     humidity.textContent = ''
-        fetch('http://localhost:3000/weather?address=' + value).then((it_Will_Run_Onlyif_fecth_work) => {
+        fetch('/weather?address=' + value).then((it_Will_Run_Onlyif_fecth_work) => {
         it_Will_Run_Onlyif_fecth_work.json().then((convert_itInto_JSONdata_from_it_Will_Run_Onlyif_fecth_work) => {
             if (convert_itInto_JSONdata_from_it_Will_Run_Onlyif_fecth_work.error){
                 //console.log(convert_itInto_JSONdata_from_it_Will_Run_Onlyif_fecth_work.error)
