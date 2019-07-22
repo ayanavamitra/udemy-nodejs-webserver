@@ -130,6 +130,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () =>{ //Use to start the http server on a specific port
-    console.log('Server Started')
+app.listen(port, () =>{ //Use to start the http server on a specific port
+    console.log('Server Started on port: ' + port)
 }) 
